@@ -1,0 +1,329 @@
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+span,
+div,
+p,
+a,
+form,
+input {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+}
+img {
+  display: block;
+}
+.clearfix,
+.wrap .nav-box,
+.wrap .recommend,
+.wrap .grid,
+.wrap .place,
+.wrap .tab .tab-panel,
+.wrap .tab .tab-panel .panel-item {
+  *zoom: 1;
+}
+.clearfix:after,
+.wrap .nav-box:after,
+.wrap .recommend:after,
+.wrap .grid:after,
+.wrap .place:after,
+.wrap .tab .tab-panel:after,
+.wrap .tab .tab-panel .panel-item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+.wrap .header {
+  position: fixed;
+  top: 0;
+  height: 2.96296296rem;
+  width: 100%;
+  background: #3f3f3f;
+  z-index: 5;
+}
+.wrap .header .header-navBar {
+  float: left;
+  height: 2.96296296rem;
+  width: 15%;
+}
+.wrap .header .header-navBar i {
+  display: block;
+  width: 1.48148148rem;
+  height: 2.96296296rem;
+  margin: 0 auto;
+  color: #fff;
+  line-height: 2.96296296rem;
+}
+.wrap .header .header-center {
+  float: left;
+  width: 70%;
+  height: 2.96296296rem;
+}
+.wrap .header .header-center .center-border {
+  background: #fff;
+  border-radius: 22px;
+  width: 100%;
+  height: 1.7037037rem;
+  line-height: 1.7037037rem;
+  margin-top: 0.59259259rem;
+}
+.wrap .header .header-center .center-border i {
+  margin-left: 0.22222222rem;
+}
+.wrap .header .header-center .center-border input {
+  border: none;
+}
+.wrap .header .header-navBars {
+  float: right;
+  height: 2.96296296rem;
+  width: 15%;
+}
+.wrap .header .header-navBars i {
+  display: block;
+  width: 1.48148148rem;
+  height: 2.96296296rem;
+  margin: 0 auto;
+  color: #fff;
+  line-height: 2.96296296rem;
+}
+.wrap .nav-box {
+  background: #3f3f3f;
+  padding: 0.59259259rem;
+  width: 100%;
+  margin-top: 2.96296296rem;
+  box-sizing: border-box;
+}
+.wrap .nav-box .box-list {
+  float: left;
+  white-space: nowrap;
+  font-size: 0;
+}
+.wrap .nav-box .box-list li {
+  display: inline-block;
+  padding: 0 0.74074074rem;
+}
+.wrap .nav-box .box-list li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+}
+.wrap .carousel-wrap {
+  position: relative;
+}
+.wrap .carousel-wrap > .list {
+  list-style: none;
+  overflow: hidden;
+  position: absolute;
+}
+.wrap .carousel-wrap > .list > li {
+  float: left;
+}
+.wrap .carousel-wrap > .list > li > a {
+  display: block;
+}
+.wrap .carousel-wrap > .list > li > a > img {
+  display: block;
+  width: 100%;
+}
+.wrap .carousel-wrap > .points-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+.wrap .carousel-wrap > .points-wrap > span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: green;
+  margin-left: 5px;
+}
+.wrap .carousel-wrap > .points-wrap > span.active {
+  background: deeppink;
+}
+.wrap .recommend {
+  border-top: 1px solid #dadada;
+  border-left: 1px solid #dadada;
+  margin: 1rem 1rem 0 1rem;
+}
+.wrap .recommend .item {
+  float: left;
+  padding: 0.5037037rem;
+  width: 50%;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  box-sizing: border-box;
+}
+.wrap .recommend .item .item-text {
+  float: left;
+  width: 50%;
+}
+.wrap .recommend .item .item-text h2 {
+  font-size: 1rem;
+  color: #222;
+}
+.wrap .recommend .item .item-text p {
+  font-size: 0.20740741rem;
+  color: #959595;
+}
+.wrap .recommend .item .item-logo {
+  float: right;
+  width: 50%;
+}
+.wrap .recommend .item .item-logo img {
+  width: 100%;
+}
+.wrap .imgs {
+  padding: 1rem;
+}
+.wrap .imgs .imgs-out img {
+  width: 100%;
+}
+.wrap .grid {
+  margin: 0 1rem 1rem 1rem;
+  border-left: 1px solid #dadada;
+  border-top: 1px solid #dadada;
+}
+.wrap .grid .item {
+  float: left;
+  width: 25%;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  padding: 0 0 1rem 0;
+  box-sizing: border-box;
+}
+.wrap .grid .item .item-logo {
+  width: 100%;
+}
+.wrap .grid .item .item-logo img {
+  width: 100%;
+}
+.wrap .grid .item .item-text {
+  text-align: center;
+}
+.wrap .grid .item .item-text h2 {
+  font-size: 0.20740741rem;
+  color: #a3a3a3;
+}
+.wrap .imgs-center {
+  padding: 1rem;
+}
+.wrap .imgs-center .center-out img {
+  width: 100%;
+}
+.wrap .imgs-bottom {
+  padding: 1rem;
+}
+.wrap .imgs-bottom .bottom-out img {
+  width: 100%;
+}
+.wrap .place {
+  padding: 1rem;
+}
+.wrap .place .item {
+  float: left;
+  width: 25%;
+  padding: 0 0.2962963rem;
+  box-sizing: border-box;
+}
+.wrap .place .item img {
+  width: 100%;
+}
+.wrap .tab .tab-nav {
+  position: relative;
+  height: 2.96296296rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.wrap .tab .tab-nav li {
+  float: left;
+  height: 2.96296296rem;
+  line-height: 2.96296296rem;
+  width: 16.66%;
+  text-align: center;
+}
+.wrap .tab .tab-nav li a {
+  color: #000;
+  font-size: 0.9rem;
+}
+.wrap .tab .tab-nav .black {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.22222222rem;
+  width: 16.66%;
+  background: #000000;
+}
+.wrap .tab .tab-panel {
+  width: 300%;
+}
+.wrap .tab .tab-panel .panel-item {
+  width: 33.333%;
+  float: left;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.wrap .tab .tab-panel .panel-item li {
+  float: left;
+  width: 50%;
+  padding: 0 0.2962963rem;
+  box-sizing: border-box;
+}
+.wrap .tab .tab-panel .panel-item li img {
+  width: 100%;
+}
+.wrap .tab .tab-panel .panel-item li p {
+  color: #333;
+  font-size: 0.01333333rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wrap .tab .tab-panel .panel-item li h4 {
+  color: #f00;
+  font-size: 0.9rem;
+  margin-top: 0.2962963rem;
+}
+.wrap .tab .tab-panel .panel-item li h4 span {
+  color: #b1b1b1;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+.wrap .tab .tab-panel .tab-loading {
+  float: left;
+  width: 33.333%;
+  background: url(../img/loading.gif) no-repeat;
+  background-position: center;
+  height: 10rem;
+}
